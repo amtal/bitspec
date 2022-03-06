@@ -1,5 +1,9 @@
 Bit pattern mini-language for instruction encodings. Bytes in, IR out!
 
+[![PyPI Version][pypi-image]][pypi-url]
+[![Doctests Status][build-image]][build-url]
+[![Code Coverage][coverage-image]][coverage-url]
+
 See [docs](https://amtal.github.io/bitspec) for a step-by-step tutorial and API
 reference. Here's a complete example:
 ```python
@@ -35,3 +39,12 @@ reference. Here's a complete example:
 Install from [Pypi](https://pypi.org/project/bitspec) or just copy `bitspec.py`
 into your project. [Bugs](https://github.com/amtal/bitspec/issues), questions,
 or [other feedback](https://github.com/amtal/bitspec/discussions) are welcome!
+
+<!-- Badges -->
+
+[pypi-image]: https://img.shields.io/pypi/v/bitspec
+[pypi-url]: https://pypi.org/project/bitspec/
+[build-image]: https://github.com/amtal/bitspec/actions/workflows/doctests.yml/badge.svg
+[build-url]: https://github.com/amtal/bitspec/actions/workflows/doctests.yml
+[coverage-image]: https://codecov.io/gh/amtal/bitspec/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/amtal/bitspec

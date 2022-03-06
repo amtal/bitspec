@@ -18,7 +18,7 @@ jobs:
         python -m pip install git+https://github.com/pdoc3/pdoc.git@f358893e4fcfd7f29857a7ff5491b606ff146d39
         python -m pdoc --html bitspec.py
 
-    - name: Init new repo in dist folder and commit generated files
+    - name: Build docs and commit to fresh git repo
       run: |
         cd html
         mv bitspec.html index.html
