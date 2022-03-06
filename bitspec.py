@@ -78,8 +78,9 @@ for free!
 # Identifying Structure in an ISA
 
 The data structure above is terse but inconvenient to lift or interpret. We're
-already pattern matching once - why switch over the values again in order
-to separate simple shifter operations from bit flips? Someone familiar with the Z80's history would trivially carve it up into octet prefixes and hextet operands.
+already pattern matching once - why switch over the values again in order to
+separate simple shifter operations from bit flips? Someone familiar with the Z80's
+history would trivially carve it up into octet prefixes and hextet operands.
 
 This library is for incremental tool development on unfamiliar or poorly
 documented targets.
@@ -289,7 +290,7 @@ A: Yes, but only touch LLVM when paid to.
 """
 ## read docs locally with `python -m pydoc -b bitspec`
 ## (or ideally with the `pdoc3` package, but keep it out of CI? hmm)
-__version__ = '0.4.3'
+__version__ = '0.0.1'#'0.4.3'
 __author__ = 'amtal'
 __license__ = 'MIT'  # https://opensource.org/licenses/MIT
 __all__ = ['dataclass', 'bitspec', 'is_bitspec', 'Bitspec']
@@ -729,7 +730,7 @@ def swap_endianness(bytes, word_length):
         arr.byteswap()
         return arr.tobytes()  # Py>=3.2 lol
     else:
-        msg = f'{byteswap*8}-bit byte endianness not implemented'
+        msg = f'{word_length*8}-bit byte endianness not implemented'
         raise NotImplementedError(msg)
 
 
