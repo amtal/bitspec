@@ -290,7 +290,7 @@ A: Yes, but only touch LLVM when paid to.
 """
 ## read docs locally with `python -m pydoc -b bitspec`
 ## (or ideally with the `pdoc3` package, but keep it out of CI? hmm)
-__version__ = '0.0.1'#'0.4.3'
+__version__ = '0.4.4'
 __author__ = 'amtal'
 __license__ = 'MIT'  # https://opensource.org/licenses/MIT
 __all__ = ['dataclass', 'bitspec', 'is_bitspec', 'Bitspec']
